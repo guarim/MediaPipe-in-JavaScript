@@ -22,7 +22,7 @@ function onResultsFace(results) {
         {color: 'blue', lineWidth: 2, fillColor: '#00000000'});
     drawLandmarks(canvasCtx1, results.detections[0].landmarks, {
       color: 'black',
-      radius: 0.2,
+      radius: 0.5,
     });
   }
   canvasCtx1.restore();

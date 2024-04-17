@@ -19,7 +19,7 @@ function onResultsFace(results) {
   if (results.detections.length > 0) {
     drawRectangle(
         canvasCtx1, results.detections[0].boundingBox,
-        {color: 'blue', lineWidth: 2, fillColor: '#90FFFFFF'});
+        {color: 'blue', lineWidth: 2, fillColor: '#00FFFFFF'});
     drawLandmarks(canvasCtx1, results.detections[0].landmarks, {
       color: 'white',
       radius: 0.5,

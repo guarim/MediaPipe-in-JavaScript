@@ -24,10 +24,10 @@ function onResultsHands(results) {
       const landmarks = results.multiHandLandmarks[index];
       drawConnectors(
           canvasCtx3, landmarks, HAND_CONNECTIONS,
-          {color: isRightHand ? '#00FF00' : '#FF0000'}),
+          {color: isRightHand ? '#FFFFFF' : '#FFFFFF'}),
       drawLandmarks(canvasCtx3, landmarks, {
-        color: isRightHand ? '#00FF00' : '#FF0000',
-        fillColor: isRightHand ? '#FF0000' : '#00FF00',
+        color: isRightHand ? '#FFFFFF' : '',#FFFFFF
+        fillColor: isRightHand ? '#FFFFFF' : '#FFFFFF',
         radius: (x) => {
           return lerp(x.from.z, -0.15, .1, 1, 1);
         }

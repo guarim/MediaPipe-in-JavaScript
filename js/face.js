@@ -21,7 +21,7 @@ function onResultsFace(results) {
         canvasCtx1, results.detections[0].boundingBox,
         {color: 'blue', lineWidth: 2, fillColor: '#00000000'});
     drawLandmarks(canvasCtx1, results.detections[0].landmarks, {
-      color: 'white',
+      color: 'red',
       radius: 0.5,
     });
   }

@@ -69,20 +69,20 @@ function onResultsHolistic(results) {
   }
   drawConnectors(
       canvasCtx4, results.poseLandmarks, POSE_CONNECTIONS,
-      {color: '#00FF00'});
+      {color: '#FFFFFF'});
   drawLandmarks(
       canvasCtx4, results.poseLandmarks,
-      {color: '#00FF00', fillColor: '#FF0000'});
+      {color: '#FFFFFF', fillColor: '#FF0000'});
   drawConnectors(
       canvasCtx4, results.rightHandLandmarks, HAND_CONNECTIONS,
-      {color: '#00CC00'});
+      {color: '#FFFFFF'});
   drawLandmarks(
       canvasCtx4, results.rightHandLandmarks, {
-        color: '#00FF00',
-        fillColor: '#FF0000',
+        color: '#FFFFFF',
+        fillColor: '#FFFFFF
         lineWidth: 2,
         radius: (data) => {
-          return lerp(data.from.z, -0.15, .1, 10, 1);
+          return lerp(data.from.z, -0.15, .1, 10, 0.7);
         }
       });
   drawConnectors(
@@ -90,34 +90,34 @@ function onResultsHolistic(results) {
       {color: '#CC0000'});
   drawLandmarks(
       canvasCtx4, results.leftHandLandmarks, {
-        color: '#FF0000',
-        fillColor: '#00FF00',
-        lineWidth: 2,
+        color: '#FFFFFF',
+        fillColor: '#FFFFFF',
+        lineWidth: 1,
         radius: (data) => {
-          return lerp(data.from.z, -0.15, .1, 10, 1);
+          return lerp(data.from.z, -0.15, .1, 10, 0.7);
         }
       });
   drawConnectors(
       canvasCtx4, results.faceLandmarks, FACEMESH_TESSELATION,
-      {color: '#C0C0C070', lineWidth: 1});
+      {color: '#FFFFFF', lineWidth: 1});
   drawConnectors(
       canvasCtx4, results.faceLandmarks, FACEMESH_RIGHT_EYE,
-      {color: '#FF3030'});
+      {color: '#FFFFFF'});
   drawConnectors(
       canvasCtx4, results.faceLandmarks, FACEMESH_RIGHT_EYEBROW,
-      {color: '#FF3030'});
+      {color: '#FFFFFF'});
   drawConnectors(
       canvasCtx4, results.faceLandmarks, FACEMESH_LEFT_EYE,
-      {color: '#30FF30'});
+      {color: '#FFFFFF'});
   drawConnectors(
       canvasCtx4, results.faceLandmarks, FACEMESH_LEFT_EYEBROW,
-      {color: '#30FF30'});
+      {color: '#FFFFFF'});
   drawConnectors(
       canvasCtx4, results.faceLandmarks, FACEMESH_FACE_OVAL,
-      {color: '#E0E0E0'});
+      {color: '#FFFFFF'});
   drawConnectors(
       canvasCtx4, results.faceLandmarks, FACEMESH_LIPS,
-      {color: '#E0E0E0'});
+      {color: '#FFFFFF'});
 
   canvasCtx4.restore();
 }

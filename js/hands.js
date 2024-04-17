@@ -29,7 +29,7 @@ function onResultsHands(results) {
         color: isRightHand ? '#00FF00' : '#FF0000',
         fillColor: isRightHand ? '#FF0000' : '#00FF00',
         radius: (x) => {
-          return lerp(x.from.z, -0.15, .1, 10, 1);
+          return lerp(x.from.z, -0.15, .1, 1, 1);
         }
       });
     }

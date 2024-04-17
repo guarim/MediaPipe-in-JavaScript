@@ -58,7 +58,7 @@ new ControlPanel(controlsElement3, {
       minTrackingConfidence: 0.5
     })
     .add([
-      new StaticText({title: 'MediaPipe Hands'}),
+      new StaticText({title: 'MediaPipe Detection Mains'}),
       fpsControl,
       new Toggle({title: 'Selfie Mode', field: 'selfieMode'}),
       new Slider(

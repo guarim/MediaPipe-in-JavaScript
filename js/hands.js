@@ -26,7 +26,7 @@ function onResultsHands(results) {
           canvasCtx3, landmarks, HAND_CONNECTIONS,
           {color: isRightHand ? '#FFFFFF' : '#FFFFFF'}),
       drawLandmarks(canvasCtx3, landmarks, {
-        color: isRightHand ? '#FFFFFF' : '','#FFFFFF',
+        color: isRightHand ? '#FFFFFF' : '#FFFFFF',
         fillColor: isRightHand ? '#FFFFFF' : '#FFFFFF',
         radius: (x) => {
           return lerp(x.from.z, -0.15, .1, 1, 1);

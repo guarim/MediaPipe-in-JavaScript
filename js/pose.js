@@ -31,8 +31,8 @@ function onResultsPose(results) {
           const x1 = out5.width * data.to.x;
           const y1 = out5.height * data.to.y;
 
-          const z0 = clamp(data.from.z + 0.5, 0, 1);
-          const z1 = clamp(data.to.z + 0.5, 0, 1);
+          const z0 = clamp(data.from.z + 0.5, 0, 0.51);
+          const z1 = clamp(data.to.z + 0.5, 0, 0.51);
 
           const gradient = canvasCtx5.createLinearGradient(x0, y0, x1, y1);
           gradient.addColorStop(
@@ -46,17 +46,17 @@ function onResultsPose(results) {
       canvasCtx5,
       Object.values(POSE_LANDMARKS_LEFT)
           .map(index => results.poseLandmarks[index]),
-      {color: zColor, fillColor: '#FF0000'});
+      {color: zColor, fillColor: '#FFFFFF'});
   drawLandmarks(
       canvasCtx5,
       Object.values(POSE_LANDMARKS_RIGHT)
           .map(index => results.poseLandmarks[index]),
-      {color: zColor, fillColor: '#00FF00'});
+      {color: zColor, fillColor: '#FFFFFF'});
   drawLandmarks(
       canvasCtx5,
       Object.values(POSE_LANDMARKS_NEUTRAL)
           .map(index => results.poseLandmarks[index]),
-      {color: zColor, fillColor: '#AAAAAA'});
+      {color: zColor, fillColor: '#FFFFFF'});
   canvasCtx5.restore();
 }
 

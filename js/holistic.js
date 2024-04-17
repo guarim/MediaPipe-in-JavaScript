@@ -79,10 +79,10 @@ function onResultsHolistic(results) {
   drawLandmarks(
       canvasCtx4, results.rightHandLandmarks, {
         color: '#FFFFFF',
-        fillColor: '#FFFFFF
-        lineWidth: 2,
+        fillColor: '#FFFFFF',
+        lineWidth: 1,
         radius: (data) => {
-          return lerp(data.from.z, -0.15, .1, 10, 0.7);
+          return lerp(data.from.z, -0.15, .1, 1, 0.7);
         }
       });
   drawConnectors(
@@ -94,7 +94,7 @@ function onResultsHolistic(results) {
         fillColor: '#FFFFFF',
         lineWidth: 1,
         radius: (data) => {
-          return lerp(data.from.z, -0.15, .1, 10, 0.7);
+          return lerp(data.from.z, -0.15, .1, 1, 0.7);
         }
       });
   drawConnectors(
